@@ -217,7 +217,7 @@ body{
 
 
 .price{
-    height: 430px ;
+    min-height: 430px;
     width: 310px;
     background-color: #ffffff;
     border-radius: 15px;
@@ -326,6 +326,17 @@ hr {
     background-color: #0D1B2A;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Direact AI Using Part  */
