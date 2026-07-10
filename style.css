@@ -65,6 +65,11 @@ body{
     color: #000000;
 }
 
+
+.hlinks a:hover{
+  color: #1D4ED8;
+  transition: 0.3s;
+}
 .btn{
     height: 50px;
     width: 200px;
@@ -302,12 +307,16 @@ hr {
 .outlinebtn{
     background-color: transparent;
     border: 1px solid #2563EB;
+    cursor: pointer;
     
 }
+
+
 
 .outlinebtn a{
     color: #2563EB;
 }
+
 
 .outlinebtn2{
     background-color: transparent;
@@ -1201,6 +1210,11 @@ footer{
     padding-right: 10px;
 }
 
+.social i:hover{
+  color: #3271f9;
+  transition: 0.2s;
+
+}
 
 #dvider{
     background: #ffffff3f;
@@ -1243,4 +1257,9 @@ footer{
      color: rgba(255, 255, 255, 0.455);
      font-size: x-small;
 
+}
+
+.ulcopy a:hover{
+  color: #ffffff;
+  transition: 0.3s;
 }
