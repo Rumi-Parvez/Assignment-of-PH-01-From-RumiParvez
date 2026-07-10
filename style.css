@@ -58,6 +58,11 @@ body{
     font-size: 0.9rem;
 }
 
+.hlinks li a{
+    text-decoration: none;
+    color: #000000;
+}
+
 .btn{
     height: 50px;
     width: 200px;
