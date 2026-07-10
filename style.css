@@ -328,20 +328,15 @@ hr {
 }
 
 
-
+/* Direact AI Using Part  */
 
 
 
 /* From my creativity with ai marging  */
 
-/* ===== Google Font ===== */
 
 
-/* =========================================================
-   DEVCONF 2026 — VERTICAL TIMELINE SECTION
-   Pure HTML + CSS. No JS, no frameworks, no external icons.
-   FIXED: center dashed line + node/circle alignment
-   ========================================================= */
+
 
 :root {
   --primary: #2563EB;
@@ -366,9 +361,9 @@ body {
   background: var(--bg);
 }
 
-/* =========================================================
+/* 
    SECTION SHELL
-   ========================================================= */
+*/
 
 .timeline-section {
   position: relative;
@@ -378,9 +373,9 @@ body {
   overflow: hidden;
 }
 
-/* =========================================================
+/* 
    DECORATIVE BACKGROUND ELEMENTS
-   ========================================================= */
+*/
 
 .bg-decor {
   position: absolute;
@@ -437,9 +432,9 @@ body {
   50% { transform: translateY(-14px); }
 }
 
-/* =========================================================
+/* 
    SECTION HEADER
-   ========================================================= */
+*/
 
 .section-header {
   position: relative;
@@ -478,9 +473,9 @@ body {
   margin: 0 auto;
 }
 
-/* =========================================================
+/* 
    TIMELINE STRUCTURE
-   ========================================================= */
+ */
 
 .timeline {
   position: relative;
@@ -490,10 +485,12 @@ body {
   margin: 0 auto;
 }
 
+
 /* Dashed vertical center line — this is the single source of truth
    for "center". Everything else (node, connectors) is now anchored
    to this same 50% axis instead of to grid-column math, so they
    can never drift apart again. */
+
 .timeline-line {
   position: absolute;
   top: 6px;
@@ -508,10 +505,14 @@ body {
 .timeline-item {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* FIX: fr units fill the full 1200px
+  grid-template-columns: 1fr 1fr; 
+  
+  /* FIX: fr units fill the full 1200px
      width, instead of the old 460px 120px 460px = 1040px, which left
      the grid short of the container and pulled everything ~80px off
      the true center line. */
+
+
   align-items: start;
   margin-bottom: 90px;
 }
@@ -520,9 +521,12 @@ body {
   margin-bottom: 0;
 }
 
+
 /* Alternating placement — cards now pull in toward center by a fixed
    60px gutter (matches the connector size below), instead of relying
    on a separate 120px grid column. */
+
+
 .item-left .timeline-card {
   grid-column: 1;
   justify-self: end;
@@ -535,16 +539,19 @@ body {
   margin-left: 60px;
 }
 
-/* =========================================================
+/* 
    TIMELINE NODE (on the center line)
-   ========================================================= */
+ */
 
 .timeline-node {
+  
   /* FIX: absolutely positioned at exactly 50% of the item, the same
      axis .timeline-line uses. This guarantees pixel-perfect alignment
      regardless of card/column widths, instead of grid-column:2 +
      justify-self:center, which only centered within the (broken)
      120px gap column. */
+
+
   position: absolute;
   top: 42px;
   left: 50%;
@@ -571,9 +578,13 @@ body {
 }
 
 .timeline-item:hover .timeline-node {
-  transform: translateX(-50%) scale(1.15); /* FIX: keep the centering
+  transform: translateX(-50%) scale(1.15); 
+
+  /* FIX: keep the centering
      translateX alongside the hover scale, or the node would jump
      off-center on hover. */
+
+
   box-shadow: 0 0 0 9px rgba(37, 99, 235, 0.16), 0 0 26px rgba(37, 99, 235, 0.35);
 }
 
@@ -582,20 +593,24 @@ body {
   50% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0.08), 0 0 26px rgba(37, 99, 235, 0.35); }
 }
 
-/* =========================================================
+/* 
    CURVED DASHED CONNECTORS (pure CSS, border-radius trick)
-   ========================================================= */
+ */
 
 .timeline-connector {
   position: absolute;
   top: 0;
-  width: 60px; /* matches the 60px card margin above, so the curve
+  width: 60px; 
+  
+  /* matches the 60px card margin above, so the curve
      always meets the card edge exactly, with no gap or overlap */
+
   height: 60px;
   z-index: 1;
 }
 
 /* Left cards: line drops from top-center, curves left into the card */
+
 .item-left .timeline-connector {
   right: 50%;
   border-right: 2.5px dashed var(--primary-light);
@@ -604,6 +619,7 @@ body {
 }
 
 /* Right cards: line drops from top-center, curves right into the card */
+
 .item-right .timeline-connector {
   left: 50%;
   border-left: 2.5px dashed var(--primary-light);
@@ -611,9 +627,9 @@ body {
   border-bottom-left-radius: 26px;
 }
 
-/* =========================================================
+/* 
    TIMELINE CARD
-   ========================================================= */
+ */
 
 .timeline-card {
   position: relative;
@@ -749,10 +765,8 @@ body {
 
 
 
-/* ==========================================================================
-   DEVCONF 2026 — FAQ Section
-   HTML + CSS only. No JavaScript, no frameworks, no external icon sets.
-   ========================================================================== */
+/*DEVCONF 2026 — FAQ Section
+   HTML + CSS only. No JavaScript, no frameworks, no external icon sets. */
 
 :root {
   --color-primary: #2563EB;
@@ -773,9 +787,8 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* ==========================================================================
-   Section shell
-   ========================================================================== */
+/* Section shell
+*/
 
 .faq {
   position: relative;
@@ -793,9 +806,8 @@ body {
   margin: 0 auto;
 }
 
-/* ==========================================================================
-   Decorative ambient background
-   ========================================================================== */
+/*Decorative ambient background
+*/
 
 .faq-decor {
   position: absolute;
@@ -875,9 +887,7 @@ body {
   50% { transform: translateY(-14px); opacity: 0.7; }
 }
 
-/* ==========================================================================
-   Header
-   ========================================================================== */
+/*Header*/
 
 .faq-header {
   text-align: center;
@@ -917,9 +927,9 @@ body {
   margin: 0;
 }
 
-/* ==========================================================================
-   FAQ list & cards
-   ========================================================================== */
+/*
+FAQ list & cards
+*/
 
 .faq-list {
   display: flex;
@@ -965,6 +975,7 @@ body {
 }
 
 /* remove default marker */
+
 .faq-card summary { list-style: none; }
 .faq-card summary::-webkit-details-marker { display: none; }
 
@@ -982,9 +993,7 @@ body {
   border-radius: 10px;
 }
 
-/* ==========================================================================
-   Icons — colorful, no background container, subtle pulse
-   ========================================================================== */
+/*Icons — colorful, no background container, subtle pulse*/
 
 .faq-icon {
   flex: none;
@@ -1008,9 +1017,7 @@ body {
   50% { opacity: 0.72; }
 }
 
-/* ==========================================================================
-   Question text & chevron
-   ========================================================================== */
+/*Question text & chevron*/
 
 .faq-q-text {
   flex: 1 1 auto;
@@ -1041,9 +1048,7 @@ body {
   color: var(--color-primary);
 }
 
-/* ==========================================================================
-   Accordion content — CSS-only smooth expand via grid-template-rows
-   ========================================================================== */
+/*Accordion content — CSS-only smooth expand via grid-template-rows*/
 
 .faq-content {
   display: grid;
@@ -1073,9 +1078,7 @@ body {
   margin-bottom: 0;
 }
 
-/* ==========================================================================
-   Page-load fade in
-   ========================================================================== */
+/*Page-load fade in*/
 
 @keyframes fadeInUp {
   from {
@@ -1088,9 +1091,7 @@ body {
   }
 }
 
-/* ==========================================================================
-   Reduced motion
-   ========================================================================== */
+/*Reduced motion*/
 
 @media (prefers-reduced-motion: reduce) {
   .blob, .dot, .faq-icon, .faq-card, .faq-header {
@@ -1105,9 +1106,7 @@ body {
   }
 }
 
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
+/*Responsive*/
 
 @media (max-width: 860px) {
   .faq {
@@ -1151,6 +1150,15 @@ body {
     height: 20px;
   }
 }
+
+
+
+
+
+
+
+
+
 
 
 
