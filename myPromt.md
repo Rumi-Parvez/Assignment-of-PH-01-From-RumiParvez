@@ -1,11 +1,27 @@
 📌Sir at frist i added thsi promt to rewriet an perfect promt by using ai at frist ghen usning taht Ai genarateed promt i had created the missing sesction . but i hadd added all the information whats i need to add in thsi promt frist i added it's all thye the ai give me thsi promt the promt in [text](aigenratedpromt.md) thsi file .
 
 
+ ## I didn't use Ai where --->
+
+## {    How Ai helped me :
+
+        1. i was taken a help from ai for know how to use overly in backround. i had learned and i used it.
+
+         2. How to style the ul doted. .. like { ul::marker } I learned and used.
+
+        3. How to style the <hr> tag. i learned and used it.
+}
 
 
 
 
-📌 This is my promt 👇: 
+ ## [ where i had ued direct ai code:
+      1. in mkaing  the missing section. 
+]
+
+
+
+## 📌 This is my promt 👇: 
 
 
 
